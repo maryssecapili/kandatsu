@@ -1,0 +1,88 @@
+// Navbar & Header
+
+.navbar {
+    &.header-navbar {
+        background-color: rgba(255, 255, 255, 0.16862745098039217);
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+
+        .nav-link {
+            color: $color-white;
+            font-size: 1.000em;
+            margin-left: 1.3em;
+            margin-right: 1.3em;
+            padding: 0;
+
+        }
+    }
+}
+
+.header-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url('../assets/header.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+    &--overlay {
+        background-color: #000;
+        opacity: 0.45;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .header-content {
+        padding-top: 9.375em;
+        padding-bottom: 9.375em;
+
+        &-logo {
+            margin-bottom: 1.25em;
+        }
+
+        p {
+            color: $color-white;
+            margin-bottom: 1.25em;
+        }
+    }
+}
+
+
+// Second Section - Facebook Updates, Forecast
+.info-section {
+    
+}
+
+// Third Section - Natural Snow
+.naturalsnow-section {
+    background-image: url('../assets/Natural-Snow.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+    &--overlay {
+        background-color: #000;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        color: $color-white;
+        font-size: 3.75em;
+    }
+}
