@@ -110,8 +110,61 @@
     }
 }
 
+//Fifth Section - Mountain
 .mountain-section {
     background-image: url('../assets/mountain.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+    &--overlay {
+        @include jumbotron-overlay;
+    }
+
+    h2 {
+        color: $color-white;
+        font-size: 3.75em;
+    }
+}
+
+// Sixth Section - Brochure
+.brochure-section {
+    &-image {
+        margin-bottom: 2em;
+    }
+
+    .modal-lg {
+        max-width: 840px;
+    }
+
+    &-table {
+        thead, tbody {
+            th {
+                background-color: $color-yellow-light;
+                border-top: 1px solid #FEE880;
+            }
+
+            td {
+                border-top: 1px solid #FEE880;
+            }
+        }
+    }
+
+    &-table-row {
+        margin-top: 3em;
+    }
+
+    p {
+        color: $color-gray;
+    }
+}
+
+// Seventh Section
+.tickets-section {
+    background-image: url('../assets/rentals.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
