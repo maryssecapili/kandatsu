@@ -82,3 +82,5 @@ typings/
 # build dir
 build/
 dist/
+src/index.html
+src/sass/_landingpage.scss
