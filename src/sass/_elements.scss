@@ -112,17 +112,17 @@ a {
 // Dividers
 .ski-line-divider {
     display: flex;
+    margin-bottom: 1em;
 
     .ski-line {
         width: 100%;
         position: relative;
         margin: 15px;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #fff;
     }
 
     .ski-icon {
         position: relative;
         top: 3px;
-        color: #ff0000;
     }
 }

@@ -105,7 +105,26 @@
 
     &-container.last {
         border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.mountain-section {
+    background-image: url('../assets/mountain.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+    &--overlay {
+        @include jumbotron-overlay;
     }
 
-
+    h2 {
+        color: $color-white;
+        font-size: 3.75em;
+    }
 }
