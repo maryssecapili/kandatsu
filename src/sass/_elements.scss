@@ -96,3 +96,33 @@ a {
         padding-bottom: 8.125em;
     }
 }
+
+// Overlays
+@mixin jumbotron-overlay() {
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+// Dividers
+.ski-line-divider {
+    display: flex;
+
+    .ski-line {
+        width: 100%;
+        position: relative;
+        margin: 15px;
+        border-bottom: 1px solid #000;
+    }
+
+    .ski-icon {
+        position: relative;
+        top: 3px;
+        color: #ff0000;
+    }
+}

@@ -29,14 +29,7 @@
     z-index: 2;
 
     &--overlay {
-        background-color: #000;
-        opacity: 0.45;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
+        @include jumbotron-overlay;
     }
 
     .header-content {
@@ -71,18 +64,48 @@
     z-index: 2;
 
     &--overlay {
-        background-color: #000;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
+        @include jumbotron-overlay;
     }
 
     h1 {
         color: $color-white;
         font-size: 3.75em;
     }
+}
+
+
+// Fourth Section - Map
+.map-section {
+    background-color: $color-white;
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+
+    p {
+        color: $color-gray;
+    }
+
+    &-image {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &-container {
+        padding-bottom: 2.5em;
+        margin-bottom: 2.5em;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    &-container.last {
+        border-bottom: 0;
+    }
+
+
 }
