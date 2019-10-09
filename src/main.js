@@ -9,10 +9,10 @@ jQuery(document).ready(function() {
     alert("jQuery Works.");
   });
 
-  jQuery('.school-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 3
+  jQuery('.facilities-slider').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1
   });
   
   
