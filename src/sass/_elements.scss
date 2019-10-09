@@ -142,6 +142,12 @@ a {
     }
 }
 
+.divider-wave {
+    margin-top: -208px;
+    z-index: 999;
+    position: relative;
+}
+
 // Accordion
 .accordion-tickets {
     .card {
@@ -164,6 +170,44 @@ a {
             font-family: 'FontAwesome';  
             content: "\f068";
             float: right; 
+        }
+    }
+}
+
+// Tables
+.table {
+    td {
+        border-top: 1px solid $color-yellow-light;
+    }
+
+    thead, tbody {
+        th {
+            background-color: $color-yellow-light;
+            border-top: 1px solid $color-yellow-light;
+            border-bottom: 2px solid $color-yellow-light;
+        }
+
+        th.cell-blue {
+            background-color: #1E90FF;
+            color: $color-white;
+        }
+
+        th.cell-orange {
+            background-color: #FF8C00;
+            color: $color-white;
+        }
+
+        th.cell-green {
+            background-color: #00CC00;
+            color: $color-white;
+        }
+
+        td {
+            border-top: 1px solid $color-yellow-light;
+        }
+    
+        td.empty {
+            border: 0;
         }
     }
 }
