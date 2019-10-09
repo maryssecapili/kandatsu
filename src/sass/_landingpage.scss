@@ -55,18 +55,8 @@
 
 // Third Section - Natural Snow
 .naturalsnow-section {
-    background-image: url('../assets/natural-snow.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 2;
-
-    &--overlay {
-        @include jumbotron-overlay;
-    }
-
+    @include jumbotron-background($backgroundImage: '../assets/natural-snow.jpg');
+    
     h1 {
         color: $color-white;
         font-size: 3.75em;
@@ -112,17 +102,7 @@
 
 //Fifth Section - Mountain
 .mountain-section {
-    background-image: url('../assets/mountain.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 2;
-
-    &--overlay {
-        @include jumbotron-overlay;
-    }
+    @include jumbotron-background($backgroundImage: '../assets/mountain.jpg');
 
     h2 {
         color: $color-white;
@@ -164,17 +144,7 @@
 
 // Seventh Section
 .tickets-section {
-    background-image: url('../assets/rentals.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 2;
-
-    &--overlay {
-        @include jumbotron-overlay;
-    }
+    @include jumbotron-background($backgroundImage: '../assets/rentals.jpg');
 
     h2 {
         color: $color-white;

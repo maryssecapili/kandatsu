@@ -109,6 +109,21 @@ a {
     z-index: -1;
 }
 
+// Backgrounds
+@mixin jumbotron-background($backgroundImage) {
+    background-image: url($backgroundImage);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+    &--overlay {
+        @include jumbotron-overlay;
+    }
+}
+
 // Dividers
 .ski-line-divider {
     display: flex;
@@ -124,5 +139,31 @@ a {
     .ski-icon {
         position: relative;
         top: 3px;
+    }
+}
+
+// Accordion
+.accordion-tickets {
+    .card {
+        border: 0;
+    }
+
+    .card-header {
+        background-color: transparent;
+        border-bottom: 1px solid #dbdbdb;
+        cursor: pointer;
+        
+        &.collapsed {
+            &:after {
+                /* symbol for "collapsed" panels */
+                content: "\f067"; 
+            }
+        }
+
+        &::after {
+            font-family: 'FontAwesome';  
+            content: "\f068";
+            float: right; 
+        }
     }
 }
