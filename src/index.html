@@ -5,9 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Kandatsu Kogen Ski Resort</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="assets/ksr.ico" type="image/gif" sizes="16x16 32x32">
+
         <!-- inject css -->
         <link rel="stylesheet" href="css/style.css" />
+
+        <!-- FontAwesome Icons CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Slick Slider CDN -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+        <!-- Ekki Lightbox CDN -->
+       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        
+
     </head>
 
     <!-- Facebook Script -->
@@ -23,57 +36,76 @@
         <header class="jumbotron jumbotron-fluid header-section">
             <!-- Navigation Bar -->
             <div class="header-section--overlay"></div>
-
-                <nav class="navbar navbar-expand-lg static-top header-navbar">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="http://www.kandatsu.com/images/20192020/2019PV.mp4" type="video/mp4">
+                </video>
+                <nav class="navbar navbar-expand-lg fixed-top header-navbar">
                         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#fff; font-size:28px;"></i>                            </span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                            <a class="nav-item nav-link active effect-underline" href="#">The Mountain <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link effect-underline" href="#">Snow Park</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Tickets & Rentals</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Schools & Activities</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Packages</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Tickets & Rentals</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Facility</a>
-                            <a class="nav-item nav-link effect-underline" href="#">Access</a>
+                            <a class="nav-item nav-link active effect-underline" href="#mountain">The Mountain <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link effect-underline" href="#tickets-and-rentals">Tickets & Rentals</a>
+                            <a class="nav-item nav-link effect-underline" href="#schools-and-activities">Schools & Activities</a>
+                            <a class="nav-item nav-link effect-underline" href="#packages">Packages</a>
+                            <a class="nav-item nav-link effect-underline" href="#snow-park">Snow Park</a>
+                            <a class="nav-item nav-link effect-underline" href="#facilities">Facilities</a>
+                            <a class="nav-item nav-link effect-underline" href="#access">Access</a>
+                            <div class="dropdown menu-language-select">
+                                <button class="btn btn-language dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    English
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">ไทย</a>
+                                    <a class="dropdown-item" href="#">简体中文</a>
+                                    <a class="dropdown-item" href="#">簡體中文</a>
+                                </div>
+                            </div>
                             </div>
                         </div>
                 </nav>
 
             <!-- Header Content -->
             <div class="container header-content text-center">
-                <div class="header-content-logo">
-                    <img src="../assets/kandatsu-logo-white.png" alt="Kandatsu Kogen Ski Resort" title="Kandatsu Kogen Ski Resort">
+                <div class="header-content-box">
+                    <div class="header-content-logo">
+                            <img src="../assets/kandatsu-logo-white.png" alt="Kandatsu Kogen Ski Resort" title="Kandatsu Kogen Ski Resort">
+                    </div>
+                    <p>Welcome to Kandatsu Snow Resort, 100% Natural Snow Ski Resort in Niigata</p>
+                    <a href="#packages"><button type="button" class="btn btn-red btn-outline hvr-shutter-out-horizontal">Special Packages</button></a>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus sed delectus libero porro natus tenetur provident, <br />
-                    consectetur nesciunt nisi obcaecati et consequatur earum accusantium doloribus repellat. Ea, soluta in!</p>
-                <button type="button" class="btn btn-yellow btn-outline hvr-shutter-out-horizontal">Special Packages</button>
-            </div>
+                </div>
         </header>
 
-        <div class="divider-wave">
-                <svg width="100%" height="100%" viewBox="0 0 1280 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff"><path d="M1280 140V0S993.46 140 640 139 0 0 0 0v140z"></path></g></svg>
-        </div>
+        <!-- <div class="divider-curves">
+            <img src="assets/bg/curve.svg" alt="">
+        </div> -->
 
         <!-- Second Section -->
         <section class="section info-section" id="">
                 <div class="container">
                     <div class="row">
                         <!-- Facebook Feed Column -->
-                        <div class="col-sm col-md">
-                            <div class="fb-page" data-href="https://www.facebook.com/kandatsukogen/" data-tabs="timeline" data-width="500" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kandatsukogen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kandatsukogen/">Kandatsu highland ski resorts</a></blockquote></div>
+                        <div class="col-sm col-md-6 text-center">
+                            <div class="facebook-box-large">
+                                    <div class="fb-page" data-href="https://www.facebook.com/kandatsukogen/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kandatsukogen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kandatsukogen/">Kandatsu highland ski resorts</a></blockquote></div>
+                            </div>
+
+                            <div class="facebook-box-small">
+                                    <div class="fb-page" data-href="https://www.facebook.com/kandatsukogen/" data-tabs="timeline" data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kandatsukogen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kandatsukogen/">Kandatsu highland ski resorts</a></blockquote></div>
+                            </div>
                         </div>
 
                         <!-- Forecast Column -->
-                        <div class="col-sm col-md"> 
-                            <iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//www.snow-forecast.com/resorts/Koshi-Kogen/forecasts/feed/mid/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0">
+                        <div class="col-sm col-md-6 text-center"> 
+                            <!-- <iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="500" src="//www.snow-forecast.com/resorts/Koshi-Kogen/forecasts/feed/mid/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0">
                             <p>Your browser does not support iframes.</p></iframe>
                                 <div id="wf-link"><a href="https://www.snow-forecast.com/">
                                     <img alt="Snow Forecast" src="//www.snow-forecast.com/images/feed/snowlogo-150.png"/></a>
                                     <p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Koshi-Kogen/6day/mid">Koshi Kogen</a> at: <a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div>
-                                </div>
+                                </div> -->
+                                <div class="elfsight-app-609f40ab-c2c6-4c4a-8e72-06eeb818c0f9"></div>
                             </div>
                         </div>
                     </div>
@@ -88,6 +120,7 @@
             </div>
         </section>
 
+        
         <!-- Fourth Section -->
         <section class=" section map-section">
             <div class="map-section--overlay"></div>
@@ -96,12 +129,12 @@
             <div class="container map-section-container">
                 <h2 class="text-center">Kandatsu is in Yuzawa, Niigata Japan</h2>
                 <div class="row">
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <div class="map-section-image">
                             <img src="../assets/kandatsu-map.png" class="img-responsive" alt="Kandatsu is in Yuzawa, Niigata Japan" title="Kandatsu is in Yuzawa, Niigata Japan">
                         </div>
                     </div>
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
@@ -113,12 +146,12 @@
             <div class="container map-section-container">
                 <h2 class="text-center">70 minutes by Shinkansen from Tokyo</h1>
                 <div class="row">
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                     </div>
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <div class="map-section-image">
                             <img src="../assets/shinkansen.jpg" class="img-responsive" alt="70 minutes by Shinkansen from Tokyo" title="70 minutes by Shinkansen from Tokyo">
                         </div>
@@ -130,12 +163,12 @@
             <div class="container map-section-container">
                 <h2 class="text-center">Free Shuttle Bus around in town</h2>
                 <div class="row">
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <div class="map-section-image">
                             <img src="../assets/tokyo-bus.jpg" class="img-responsive" alt="Free Shuttle Bus around in town" title="Free Shuttle Bus around in town">
                         </div>
                     </div>
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
@@ -147,12 +180,12 @@
             <div class="container map-section-container last">
                 <h2 class="text-center">Hot Spring available before you leave</h1>
                 <div class="row">
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis vel blanditiis nobis! Aliquid sint voluptatibus quae ipsa error nihil ipsum assumenda. Similique consequuntur quo ipsam, ullam nisi veniam.</p>
                     </div>
-                    <div class="col-sm col-md col-lg col-xl">
+                    <div class="col-sm col-md-12 col-lg col-xl">
                         <div class="map-section-image">
                             <img src="../assets/hotspring.jpg" class="img-responsive" alt="Hot Spring available before you leave" title="Hot Spring available before you leave">
                         </div>
@@ -163,7 +196,7 @@
         </section>
 
         <!-- Fifth Section -->
-        <section class="jumbotron jumbotron-fluid section mountain-section">
+        <section class="jumbotron jumbotron-fluid section mountain-section" id="mountain">
             <div class="naturalsnow-section--overlay"></div>
             <div class="container">
                 <div class="ski-line-divider">
@@ -190,31 +223,14 @@
         <!-- Sixth Section -->
         <section class="section brochure-section">
             <div class="container">
-                <div class="brochure-section-image">
-                    <img src="assets/2019map.jpg" alt="" data-toggle="modal" data-target="#brochureModal" class="mx-auto d-block">
-                </div>
+                    <a href="assets/2019map.jpg" data-toggle="lightbox">
+                        <div class="brochure-section-image">
+                            <img src="assets/2019map.jpg" alt="" data-toggle="modal" data-target="#brochureModal" class="mx-auto d-block">
+                        </div>
+                    </a>
 
                 <div class="brochure-section-btn text-center">
-                    <a href="assets/2019map.jpg" download><button type="button" class="btn btn-yellow btn-outline hvr-shutter-out-horizontal">Download Brochure</button></a>
-                </div>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="brochureModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="brochure-section-image-full">
-                                    <img src="assets/2019map.jpg" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    <a href="assets/2019map.jpg" download><button type="button" class="btn btn-red btn-outline hvr-shutter-out-horizontal">Download</button></a>
                 </div>
 
                 <div class="row brochure-section-table-row">
@@ -268,7 +284,7 @@
         </section>
 
         <!-- Seventh Section -->
-        <section class="jumbotron jumbotron-fluid section tickets-section">
+        <section class="jumbotron jumbotron-fluid section tickets-section" id="tickets-and-rentals">
             <div class="tickets-section--overlay"></div>
             <div class="container">
                 <div class="ski-line-divider">
@@ -300,12 +316,15 @@
                     <div class="row">
                         <div class="col-sm col-md col-lg col-xl">
                             <h3>Season</h3>
-                            <p>2019-2020 Winter season. FROM December 14th 2019 TO May 6th 2020</p>
+                            <p>2019-2020 Winter season. FROM December 14th 2019 TO April 19th 2020</p>
                             <p>OPEN HOURS <br> 
                                 Winter Time 08:00 – 17:00 <br> 
-                                Spring Time 08:00 – 16:00 *Weekdays / 08:00 – 16:30 *Weekends and Holidays</p> 
+                                Spring Time 08:00 – 16:00 *Weekdays / 08:00 – 16:30 *Weekends and Holidays <br>
+                                Open from 7am to 4:30pm (Sat, Sun, Holiday) and 8am to 430pm (Weekday) <br>
+                                Night Time 6pm to 2am (Fri night, Sat night, Pre-Holiday night)
+                            </p> 
+                            <p>Spring season March 30 to April 19th</p>
                             <p>*Open-period and opening hours may change depending on the condition of the weather</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ab ullam, sint eaque culpa error porro nesciunt rem! Doloremque, magni. Aliquid quaerat consectetur natus voluptatem assumenda, tempore optio nobis perspiciatis?</p>
                         </div>
                         <div class="col-sm col-md col-lg col-xl">
                             <div class="map-section-image">
@@ -347,7 +366,7 @@
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">All-day Pass</th>
+                                        <th scope="row">One Way Lift Ticket</th>
                                         <td scope="col">¥ 500</td>
                                         <td scope="col">¥ 500</td>
                                         <td scope="col">¥ 500</td>
@@ -360,10 +379,10 @@
                     <div class="col-sm-12 col-lg-12 col-xl-12">
                         <div class="tickets-detail">
                             <ul class="list-group list-group-flush tickets-detail-list">
-                                <li class="list-group-item">* Senior fee applies to customers over the age of 55, and child fee applies to elementary school customers.</li>
-                                <li class="list-group-item">* Senior fee applies to customers over the age of 55, and child fee applies to elementary school customers.</li>
-                                <li class="list-group-item">* From December 30, 2019 (Monday) to January 3, 2020 (Friday), it will be open for the year-end and New Year holidays. It becomes.</li>
-                                <li class="list-group-item">* Disabled person discount system. Please present your notebook. This is a discount only for the person. (Lift daily ticket 2,000 yen)</li>
+                                <li class="list-group-item">* 1 Day Pass will be valid from open to 4:30pm. 2 Day Pass will be valid for 2 consecutive days.</li>
+                                <li class="list-group-item">* Senior fee applies to customers over the age of 55, and child fee applies to elementary school customers and above. 6 years old or younger will be free but need to have the IC pass so please come to see the ticket office for IC ticket deposit (500 JPY to be deposit, and will be back after use).</li>
+                                <li class="list-group-item">* From December 30, 2019 (Monday) to January 3, 2020 (Friday), it will be open for the year-end and New Year holidays as holiday price.</li>
+                                <li class="list-group-item">* Disabled person discount system. Please present your official certificate issued in Japan. This discount applies only for the person. (1 Day ticket will be 2,000 yen)</li>
                                 <li class="list-group-item">* Only one person can purchase a senior ticket. Proof of identification is required for purchase.</li>
                                 <li class="list-group-item">* Only one child ticket can be purchased by the person.</li>
                                 <li class="list-group-item">* Card payment available (TS CUBIC / VISA / MASTER / JCB / AMEX / Ginley)</p>
@@ -387,29 +406,29 @@
                                         <th colspan="8" class="text-center">Set</th>
                                     </tr>
                                     <tr>
-                                        <th scope="row">grown up</th>
-                                        <th scope="row" class="cell-blue text-center">Half-day charge</th>
-                                        <th scope="row" class="cell-orange text-center">Daily price</th>
-                                        <th scope="row" class="cell-green text-center">2-day fee</th>
+                                        <th scope="row">Adult</th>
+                                        <th scope="row" class="cell-blue text-center">Half-day</th>
+                                        <th scope="row" class="cell-orange text-center">1 Day</th>
+                                        <th scope="row" class="cell-green text-center">2 Days</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">Ski / board set</th>
+                                        <th scope="row">Ski / Snowboard</th>
                                         <td scope="col">¥ 3,800 </td>
                                         <td scope="col">¥ 4,300</td>
                                         <td scope="col">¥ 8,000</td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">Wear top and bottom set</th>
+                                        <th scope="row">Ski Wear</th>
                                         <td scope="col">¥ 3,300 </td>
                                         <td scope="col">¥ 3,800</td>
                                         <td scope="col">¥ 7,000</td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">Ski / board full set</th>
+                                        <th scope="row">Ski / Snowboard and Ski Wear Full Set</th>
                                         <td scope="col">¥ 6,000 </td>
                                         <td scope="col">¥ 7,000</td>
                                         <td scope="col">¥ 13,000</td>
@@ -444,7 +463,7 @@
         </section>
 
          <!-- Ninth Section -->
-         <section class="jumbotron jumbotron-fluid section schools-section">
+         <section class="jumbotron jumbotron-fluid section schools-section" id="schools-and-activities">
             <div class="schools-section--overlay"></div>
             <div class="container">
                 <div class="ski-line-divider">
@@ -474,7 +493,7 @@
             <div class="container">
                 <div class="school-details-info">
                     <div class="row">
-                        <div class="col-sm col-md col-lg col-xl">
+                        <div class="col-sm col-md-12 col-lg col-xl">
                             <h3>Schools</h3>
                             <p>2019-2020 Winter season. FROM December 14th 2019 TO May 6th 2020</p>
                             <p>OPEN HOURS <br> 
@@ -483,7 +502,7 @@
                             <p>*Open-period and opening hours may change depending on the condition of the weather</p>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ab ullam, sint eaque culpa error porro nesciunt rem! Doloremque, magni. Aliquid quaerat consectetur natus voluptatem assumenda, tempore optio nobis perspiciatis?</p>
                         </div>
-                        <div class="col-sm col-md col-lg col-xl">
+                        <div class="col-sm col-md-12 col-lg col-xl">
                             <div class="map-section-image">
                                 <img src="../assets/ski-school.jpg" class="img-responsive" alt="Kandatsu School and Activities" title="Kandatsu School and Activities">
                             </div>
@@ -516,13 +535,13 @@
                 </div>
 
                 <div class="school-section-btn text-center">
-                    <button type="button" class="btn btn-yellow btn-outline hvr-shutter-out-horizontal">Book now!</button>
+                    <button type="button" class="btn btn-red btn-outline hvr-shutter-out-horizontal">Book now!</button>
                 </div>
             </div>
         </section>
 
         <!-- Eleventh Section -->
-        <section class="jumbotron jumbotron-fluid section packages-section">
+        <section class="jumbotron jumbotron-fluid section packages-section" id="packages">
             <div class="packages-section--overlay"></div>
             <div class="container">
                 <div class="ski-line-divider">
@@ -549,37 +568,21 @@
         <!-- Twelfth Section -->
         <section class="section packages-details-section">
             <div class="container">
-                <div class="brochure-section-image">
-                    <img src="assets/2019map.jpg" alt="" data-toggle="modal" data-target="#brochureModal" class="mx-auto d-block">
-                </div>
+                <a href="assets/2019map.jpg" data-toggle="lightbox">
+                    <div class="packages-section-image">
+                        <img src="assets/2019map.jpg" alt="" data-toggle="modal" data-target="#packagesModal" class="mx-auto d-block">
+                    </div>
+                </a>
 
-                <div class="brochure-section-btn text-center">
-                    <a href="assets/2019map.jpg" download><button type="button" class="btn btn-yellow btn-outline hvr-shutter-out-horizontal">Download Packages</button></a>
+                <div class="pacakages-section-btn text-center">
+                    <a href="assets/2019map.jpg" download><button type="button" class="btn btn-red btn-outline hvr-shutter-out-horizontal">Download Packages</button></a>
                 </div>
                 
-                <!-- Modal -->
-                <div class="modal fade" id="brochureModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="brochure-section-image-full">
-                                    <img src="assets/2019map.jpg" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <!-- Thirteenth Section -->
-        <section class="jumbotron jumbotron-fluid section snow-park-section">
+        <section class="jumbotron jumbotron-fluid section snow-park-section" id="snow-park">
             <div class="snow-park-section--overlay"></div>
             <div class="container">
                 <div class="ski-line-divider">
@@ -606,72 +609,30 @@
         <!-- Fourteenth Section -->
         <section class="section snow-park-details-section">
             <div class="container">
-                <div class="snow-park-details-box">
-                    <h3>Snow Park Details</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quam repudiandae distinctio qui rerum? Impedit, perferendis laudantium officiis quia enim minus deleniti accusantium aliquid inventore sed. Nostrum ex ad autem.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quam repudiandae distinctio qui rerum? Impedit, perferendis laudantium officiis quia enim minus deleniti accusantium aliquid inventore sed. Nostrum ex ad autem.</p>
-                </div>
-
                 <div class="row snow-park-details-row">
                     <div class="col-sm-4">
                         <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
+                            <img src="assets/sclover-park.jpg" class="card-img-top" alt="Kandatsu Group">
                             <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Sclover Park</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4">
                         <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
+                            <img src="assets/hike-up.jpg" class="card-img-top" alt="Kandatsu Group">
                             <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Hike up Park</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4">
                         <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
+                            <img src="assets/spica.jpg" class="card-img-top" alt="Kandatsu Group">
                             <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
-                            <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
-                            <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img src="assets/snow-park.jpg" class="card-img-top" alt="Kandatsu Group">
-                            <div class="card-body">
-                                <h5 class="card-title">Snow Detail Heading</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Spica Activity Park</h5>
                             </div>
                         </div>
                     </div>
@@ -680,19 +641,282 @@
              </div>
         </section>
 
+        <!-- Fifteenth Section -->
+        <section class="jumbotron jumbotron-fluid section facilities-section" id="facilities">
+            <div class="facilities-section--overlay"></div>
+            <div class="container">
+                <div class="ski-line-divider">
+                    <div class="ski-line"></div>
+                    <div class="ski-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 267.316 289.447">
+                            <g id="alpine" transform="translate(-0.056)">
+                                <path id="Path_1" data-name="Path 1" d="M427.735,29.428A29.428,29.428,0,1,1,398.307,0a29.428,29.428,0,0,1,29.428,29.428Zm0,0" transform="translate(-160.364)" fill="#fff"/>
+                                <path id="Path_2" data-name="Path 2" d="M274.776,295.841a31.14,31.14,0,0,1-35.058,1.678l-98.3-59.936a14.663,14.663,0,0,0,4.95-1.164l69.01-30.7a22.562,22.562,0,0,0,2.846-39.728l-36.983-26.094a4.906,4.906,0,0,1-1.077-7.356l7.16-3.581-3.091-2.159a19.622,19.622,0,0,1-7.995-11.966l-1.863-8.732a19.512,19.512,0,0,1,15.009-23.3l9.957-2.159a4.911,4.911,0,0,1,5.837,3.778,4.817,4.817,0,0,1-3.729,5.789l-9.957,2.157a9.875,9.875,0,0,0-7.553,11.673l1.914,8.732a9.643,9.643,0,0,0,3.972,5.983l7.456,5.2.1-.049L232.2,148.182a15.756,15.756,0,0,0,17.108.589,5.014,5.014,0,0,0,1.545,1.161l19.851,9.434a4.906,4.906,0,0,0,4.217-8.86l-19.711-9.388a14.609,14.609,0,0,0-5.5-16.627l-17.656-12.311a2.451,2.451,0,0,1,.883-4.413L239.9,106.3a4.906,4.906,0,0,0,3.729-5.835l-2.894-13.587a36.272,36.272,0,0,0-9.809-17.952,34.288,34.288,0,0,0-45.909-2.354l-12.9,10.5L152.673,92.881A4.913,4.913,0,0,0,150.99,91.5l-57.746-27.5,2.508-4.959a4.907,4.907,0,0,0-8.781-4.385L84.387,59.8,68.923,52.443A4.9,4.9,0,1,0,64.7,61.269L80,68.553l-2.859,5.714a4.907,4.907,0,1,0,8.778,4.387l2.943-5.886,55.831,26.584L134.3,107.817a26.077,26.077,0,0,0-6.18,7.111,25.269,25.269,0,0,0-2.649,11.478,27.226,27.226,0,0,0,12.114,22.807l46.6,29.87a4.906,4.906,0,0,1-.687,8.584L135.187,209.2a15.255,15.255,0,0,0-8.535,19.029,5.362,5.362,0,0,0,.261.49L59.56,187.672a4.9,4.9,0,1,0-5.111,8.372L234.611,305.911a40.868,40.868,0,0,0,46.051-2.206,4.905,4.905,0,1,0-5.886-7.849Zm0,0" transform="translate(-22.61 -22.522)" fill="#fff"/>
+                                <path id="Path_3" data-name="Path 3" d="M44.2,207.894a4.9,4.9,0,0,0,2.605-9.063L7.569,174.307a4.913,4.913,0,0,0-5.2,8.339l39.237,24.522a4.914,4.914,0,0,0,2.594.726Zm0,0" transform="translate(0 -75.465)" fill="#fff"/>
+                                <path id="Path_4" data-name="Path 4" d="M63.106,182.61l39.24,24.522a4.913,4.913,0,1,0,5.2-8.337l-39.24-24.524a4.914,4.914,0,0,0-5.2,8.339Zm0,0" transform="translate(-26.408 -75.449)" fill="#fff"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="ski-line"></div>
+                </div>
+                <h2 class="text-center">Facilities</h1>
+                <div class="ski-line-divider">
+                    <div class="ski-line"></div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Sixteenth Section -->
         <section class="section facilities-images-section">
             <div class="container">
-                <div class="row">
-                   
+                <!-- Top content -->
+                <div class="facilities-slider">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_0.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box">
+                                    <img src="assets/facilities/facility_0.jpg" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Resort Hall</h5>
+                                <p class="card-text">The resort hall, located in the base parking lot, has major facilities such as Kaminoyu, salon, event hall, shops and rentals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_3.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_3.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Locker Room</h5>
+                                <p class="card-text">Place your luggage in the locker room and change to snowwear before going to the slopes!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_4.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_4.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Women's Locker</h5>
+                                <p class="card-text">All women's locker rooms have Dyson dryers! Please enjoy the professional finish used in the beauty salon.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_5_2.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_5_2.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Lala House</h5>
+                                <p class="card-text">“LaLa HOUSE” on the first floor of the resort hall is a stylish pub with a bar counter. There is also a set menu in the daytime, and at night it turns into a pub-style bar that handles many types of liquor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_6.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_6.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Kebab No Mori</h5>
+                                <p class="card-text">If you feel hungry, go to the kitchen car. In front of the resort hall, “Kebab no Mori” offers hot kebab-centered hot snacks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_8_2.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_8_2.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Guerespo</h5>
+                                <p class="card-text">We have items essential for enjoying the slopes, such as helmets and goggles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_9.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_9.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Souvenir Shop</h5>
+                                <p class="card-text">There are plenty of souvenirs from Niigata and Echigo Yuzawa! Please drop in before you return.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <a href="assets/facilities/facility_12.jpg" data-toggle="lightbox" data-gallery="facilities-gallery">
+                                <div class="card-img-box"><img src="assets/facilities/facility_12.jpg" class="img-fluid"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">4-6F Kaminoyu</h5>
+                                <p class="card-text">Opening hours: Weekdays 12:00 to 18:00 (Bathing only); Friday 18:00 to Sunday 18:00 (Last check-in 17:30)</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
         
+        <!-- Eighteenth Section -->
+        <section class="jumbotron jumbotron-fluid section access-section" id="access">
+            <div class="access-section--overlay"></div>
+            <div class="container">
+                <div class="ski-line-divider">
+                    <div class="ski-line"></div>
+                    <div class="ski-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 267.316 289.447">
+                            <g id="alpine" transform="translate(-0.056)">
+                                <path id="Path_1" data-name="Path 1" d="M427.735,29.428A29.428,29.428,0,1,1,398.307,0a29.428,29.428,0,0,1,29.428,29.428Zm0,0" transform="translate(-160.364)" fill="#fff"/>
+                                <path id="Path_2" data-name="Path 2" d="M274.776,295.841a31.14,31.14,0,0,1-35.058,1.678l-98.3-59.936a14.663,14.663,0,0,0,4.95-1.164l69.01-30.7a22.562,22.562,0,0,0,2.846-39.728l-36.983-26.094a4.906,4.906,0,0,1-1.077-7.356l7.16-3.581-3.091-2.159a19.622,19.622,0,0,1-7.995-11.966l-1.863-8.732a19.512,19.512,0,0,1,15.009-23.3l9.957-2.159a4.911,4.911,0,0,1,5.837,3.778,4.817,4.817,0,0,1-3.729,5.789l-9.957,2.157a9.875,9.875,0,0,0-7.553,11.673l1.914,8.732a9.643,9.643,0,0,0,3.972,5.983l7.456,5.2.1-.049L232.2,148.182a15.756,15.756,0,0,0,17.108.589,5.014,5.014,0,0,0,1.545,1.161l19.851,9.434a4.906,4.906,0,0,0,4.217-8.86l-19.711-9.388a14.609,14.609,0,0,0-5.5-16.627l-17.656-12.311a2.451,2.451,0,0,1,.883-4.413L239.9,106.3a4.906,4.906,0,0,0,3.729-5.835l-2.894-13.587a36.272,36.272,0,0,0-9.809-17.952,34.288,34.288,0,0,0-45.909-2.354l-12.9,10.5L152.673,92.881A4.913,4.913,0,0,0,150.99,91.5l-57.746-27.5,2.508-4.959a4.907,4.907,0,0,0-8.781-4.385L84.387,59.8,68.923,52.443A4.9,4.9,0,1,0,64.7,61.269L80,68.553l-2.859,5.714a4.907,4.907,0,1,0,8.778,4.387l2.943-5.886,55.831,26.584L134.3,107.817a26.077,26.077,0,0,0-6.18,7.111,25.269,25.269,0,0,0-2.649,11.478,27.226,27.226,0,0,0,12.114,22.807l46.6,29.87a4.906,4.906,0,0,1-.687,8.584L135.187,209.2a15.255,15.255,0,0,0-8.535,19.029,5.362,5.362,0,0,0,.261.49L59.56,187.672a4.9,4.9,0,1,0-5.111,8.372L234.611,305.911a40.868,40.868,0,0,0,46.051-2.206,4.905,4.905,0,1,0-5.886-7.849Zm0,0" transform="translate(-22.61 -22.522)" fill="#fff"/>
+                                <path id="Path_3" data-name="Path 3" d="M44.2,207.894a4.9,4.9,0,0,0,2.605-9.063L7.569,174.307a4.913,4.913,0,0,0-5.2,8.339l39.237,24.522a4.914,4.914,0,0,0,2.594.726Zm0,0" transform="translate(0 -75.465)" fill="#fff"/>
+                                <path id="Path_4" data-name="Path 4" d="M63.106,182.61l39.24,24.522a4.913,4.913,0,1,0,5.2-8.337l-39.24-24.524a4.914,4.914,0,0,0-5.2,8.339Zm0,0" transform="translate(-26.408 -75.449)" fill="#fff"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="ski-line"></div>
+                </div>
+                <h2 class="text-center">Access</h1>
+                <div class="ski-line-divider">
+                    <div class="ski-line"></div>
+                </div>
+            </div>
+        </section>
         
-        
+        <!-- Ninteenth Section -->
+        <section class="section location-section">
+            <div class="container">
+                <h3 class="text-center">100% Natural Snow Resort where you can make day trip from Tokyo</h3>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25517.86113994689!2d138.7933657!3d36.9206563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e03c243dbb017%3A0x9dfdc0d3ea9e4d89!2sKandatsu%20Kogen%20Ski%20Resort!5e0!3m2!1sen!2sph!4v1570681082100!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                            <a href="assets/parking-map-red.png" data-toggle="lightbox">
+                                <div class="card-img-box">
+                                    <img src="assets/parking-map-red.png" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Parking Lot</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-8">
+                        <div class="card">
+                            <div class="access-map-bus">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d797.2800910304269!2d138.80886!3d36.9352909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e034a1cc3ad29%3A0xfa83359baaed89e9!2z56We56uL6auY5Y6f44K544Kt44O85aC044OQ44K55b6F5ZCI5omA!5e0!3m2!1sen!2sph!4v1571135186653!5m2!1sen!2sph" width="100%" height="465" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Shuttle Bus</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                    <div class="card access-btn">
+                            <a href="https://bit.ly/33ykcOA" target="_blank">
+                                <div class="card-body">
+                                    <h5 class="card-title">Drive Route from Tokyo Station</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card access-btn" target="_blank">
+                            <a href="https://bit.ly/2OOZPZB">
+                                <div class="card-body">
+                                    <h5 class="card-title">Train Route from Tokyo Station</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+	<section class="footer">
+        <div class="container">
+            <div class="footer-content-logo text-center">
+                <img src="../assets/kandatsu-logo-white.png" alt="Kandatsu Kogen Ski Resort" title="Kandatsu Kogen Ski Resort">
+            </div>
+            <div class="footer-content-info">
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusantium vitae numquam iusto nemo mollitia impedit, architecto vel, a obcaecati laborum? Fugit nesciunt delectus quis provident optio assumenda, fugiat dicta?</p>
+            </div>
+            
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <h5>About</h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#">The Mountain</a></li>
+                        <li><a href="#">Snow Park</a></li>
+                        <li><a href="#">Ticket & Rentals</a></li>
+                        <li><a href="#">Schools & Activities</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">Access</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fa fa-map-marker"></i> 4121-1 Kandatsu, Yuzawa, Minamiuonuma District, Niigata 949-6102</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i> 025-788-0111</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i>mail@sample.com</a></li>
+                    </ul>
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p class="h6">&copy Copyright 2019. All rights reserved.</p>
+                </div>
+                </hr>
+            </div>	
+        </div>
+    </section>
+
+        <a class="back-to-top btn btn-lg back-to-top" href="#" role="button"><i class="fa fa-chevron-up"></i></a>
+
         <!-- inject js -->
         <script src="js/bundle.js"></script>
+        <!-- Slick Slider JS CDN -->
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Ekko Lightbox JS CDN -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     </body>
 </html>

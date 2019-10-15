@@ -2,9 +2,13 @@
 
 .navbar {
     &.header-navbar {
-        background-color: rgba(255, 255, 255, 0.16862745098039217);
+        background-color: rgba(0, 0, 0, 0.33);
         padding-top: 1.5em;
         padding-bottom: 1.5em;
+
+        @include for-phone-only {
+            background-color: $color-red-light;
+        }
 
         .nav-link {
             color: $color-white;
@@ -12,7 +16,32 @@
             margin-left: 1.3em;
             margin-right: 1.3em;
             padding: 0;
+            
+            @include for-phone-only {
+                padding: 0.2em 0;
+            }
 
+            @include for-ipad-pro {
+                font-size: 15px;
+            }
+
+        }
+
+        .dropdown {
+            &.menu-language-select {
+                @include for-phone-only {
+                    margin-left: 1.3em;
+                }
+
+                @include for-tablet {
+                    margin-left: 1.3em;
+                }
+
+                .btn-language {
+                    color: $color-white;
+                    padding: 0;
+                }
+            }
         }
     }
 }
@@ -26,24 +55,99 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    z-index: 2;
-    height: 70vh;
+    z-index: 7;
+    height: 90vh;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2%;
+        width: 100%;
+        height: 100px;
+        background: url('../assets/bg/curve.svg');
+        z-index: 1;
+    }
+
+    @include for-phone-only { 
+        height: 100vh;
+    }
+
+    @include for-ipad-pro {
+        height: 70vh;
+    }
 
     &--overlay {
-        @include jumbotron-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.82);
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .header-content {
-        padding-top: 9.375em;
-        padding-bottom: 9.375em;
+        // padding-top: 14.375em;
+        // padding-bottom: 9.375em;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+
+        @include for-phone-only {
+            height: 100vh;
+        }
+
+        @include for-ipad-pro {
+            height: 70vh;
+        }
 
         &-logo {
             margin-bottom: 1.25em;
+
+            @include for-phone-only {
+                height: 130px;
+            }
+
+            img {
+                @include for-phone-only {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
         }
 
         p {
             color: $color-white;
             margin-bottom: 1.25em;
+
+            @include for-tablet {
+                font-size: 1.3em;
+            }
+
+            @include for-ipad-pro {
+                font-size: 1.7em;
+            }
         }
     }
 }
@@ -52,15 +156,69 @@
 // Second Section - Facebook Updates, Forecast
 .info-section {
     
+
+    iframe {
+        @include for-phone-only {
+            width: auto;
+        }
+
+        @include for-tablet {
+            width: auto;
+        }
+    }
+
+    .facebook-box-large {
+        @include for-phone-only {
+            display: none;
+        }
+    }
+
+    .facebook-box-small {
+        display: none;
+        margin-bottom: 2em;
+        
+        @include for-phone-only {
+            display: block;
+        }
+    }
 }
 
 // Third Section - Natural Snow
 .naturalsnow-section {
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background: url('../assets/bg/wave.svg');
+        z-index: 1;
+    }
+
     @include jumbotron-background($backgroundImage: '../assets/natural-snow.jpg');
+
+   
+
+    padding-top: 14.125em;
+    padding-bottom: 6.75em;
+
+    @include for-phone-only {
+        padding-top: 6.125em;
+        padding-bottom: 5.75em;
+    }
     
     h1 {
         color: $color-white;
         font-size: 3.75em;
+
+        @include for-phone-only {
+            font-size: 2.50em;
+        }
+
+        @include for-tablet {
+            font-size: 2.75em;
+        }
     }
 }
 
@@ -80,7 +238,7 @@
 
     &-image {
         max-width: 100%;
-
+        margin-bottom: 2em;
         img {
             width: 100%;
             max-width: 100%;
@@ -114,22 +272,42 @@
 // Sixth Section - Brochure
 .brochure-section {
     &-image {
+        max-width: 100%;
         margin-bottom: 2em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .modal-lg {
-        max-width: 840px;
+    &-image-full {
+        max-width: 100%;
+        margin-bottom: 2em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
+
+    // .modal-lg {
+    //     max-width: 840px;
+
+    //     @include for-phone-only {
+    //         width: auto;
+    //     }
+    // }
 
     &-table {
         thead, tbody {
             th {
-                background-color: $color-yellow-light;
-                border-top: 1px solid #FEE880;
+                background-color: $color-red-light;
+                border-top: 1px solid $color-red-light;
             }
 
             td {
-                border-top: 1px solid #FEE880;
+                border-top: 1px solid $color-red-light;
             }
         }
     }
@@ -140,6 +318,18 @@
 
     p {
         color: $color-gray;
+    }
+
+    .brochure-image {
+        max-width: 100%;
+        max-height: 100%;
+
+        img {
+            @include for-phone-only {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 
@@ -156,9 +346,14 @@
 // Eighth Section
 .ticket-details-section {
     h3 {
-        background-color: $color-yellow;
+        background-color: $color-red;
         padding: 10px;
         text-align: center;
+        color: $color-white;
+
+        @include for-phone-only {
+            margin-bottom: 2em;
+        }
     }   
 
     .ticket-details-info {
@@ -212,6 +407,28 @@
     }
 }
 
+.packages-details-section {
+    .packages-section-image {
+        max-width: 100%;
+        margin-bottom: 2em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .packages-section-image-full {
+        max-width: 100%;
+        margin-bottom: 2em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 // Thirteenth Section
 .snow-park-section {
     @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
@@ -236,13 +453,37 @@
     }
     
     &-row {
-        margin-bottom: 2em;
+        .card {
+            &-body {
+                background-color: $color-red;
+
+                h5 {
+                    margin-bottom: 0;
+                    color: $color-white;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
+//Fifteenth
+.facilities-section {
+    @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
+
+    h2 {
+        color: $color-white;
+        font-size: 3.75em;
+    }
+}
 
 //Sixteenth
 .facilities-images-section {
+
+    @include for-phone-only {
+        padding-bottom: 0;
+    }
+
     .facilities-box {
         &-details {
             padding: 30px;
@@ -250,6 +491,216 @@
 
             p:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .facilities-slider {
+        .card {
+            margin-bottom: 2em;
+        }
+
+        .card-img-box {
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include for-phone-only {
+                height: auto;
+            }
+            @include for-tablet {
+                height: auto;
+            }
+
+        }
+    }
+}
+
+
+//Eighteenth
+.access-section {
+    @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
+
+    h2 {
+        color: $color-white;
+        font-size: 3.75em;
+    }
+}
+
+
+//Nineteenth
+.location-section {
+    h3 {
+        margin-bottom: 1em;
+    }
+
+    .location-map {
+        margin-bottom: 2em;
+    }
+
+    .card {
+        .card-img-box {
+            height: auto;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card-body {
+            margin-top: 1em;
+            background-color: $color-red;
+            color: $color-black;
+            text-align: center;
+            
+            h5 {
+                margin-bottom: 0;
+                color: $color-white;
+            }
+
+            @include for-phone-only {
+                margin-bottom: 2em;
+            }
+        }
+
+        &.access-btn {
+            a {
+                text-decoration: none;
+            }
+
+            .card-body {
+                -webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
+
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid $color-red;
+                   
+
+                    h5 {
+                        color: $color-red;
+                    }
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    background: $color-black;
+    padding-top: 15em;
+    padding-bottom: 5em;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background: url('../assets/bg/wave.svg');
+        z-index: 1;
+    }
+    
+    @include for-phone-only {
+        padding-top: 8em;
+    }
+
+    @include for-tablet {
+        padding-top: 10em;
+        padding-bottom: 4em;
+    }
+
+    &-content-logo {
+        margin-bottom: 2em;
+
+        @include for-phone-only {
+            height: 130px;
+        }
+
+        img {
+            @include for-phone-only {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    p {
+        color: $color-white;
+    }
+
+    h5 {
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        color:#ffffff;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    ul {
+        &.social {
+            li {
+                padding: 3px 0;
+    
+                a {
+                    color: $color-red-light;
+
+                    i {
+                        margin-right: 5px;
+                        font-size:25px;
+                        -webkit-transition: .5s all ease;
+                        -moz-transition: .5s all ease;
+                        transition: .5s all ease;
+                    }
+                }
+    
+                &:hover {
+                    a i {
+                        font-size:30px;
+                        margin-top:-10px;
+                    }
+                }
+            }
+        }
+
+        &.quick-links {
+            li {
+                padding: 3px 0;
+                -webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
+
+                &:hover {
+                    padding: 3px 0;
+                    margin-left:2px;
+                    font-weight:700;
+                }
+
+                a i {
+                    margin-right: 5px;
+                }
             }
         }
     }

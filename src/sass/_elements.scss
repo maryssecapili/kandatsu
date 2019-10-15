@@ -1,6 +1,12 @@
 //Links
 $underline_transition: all .25s cubic-bezier(1,.25,0,.75) 0s;
 
+h2 {
+    @include for-phone-only {
+        font-size: 2.75em !important;
+    }
+}
+
 a {
     &.effect-underline {
         position: relative;
@@ -31,9 +37,13 @@ a {
 }
 
 //Buttons
-.btn-yellow {
-    background-color: $color-yellow;
+.btn-red {
+    background-color: $color-red;
     color: $color-white;
+
+    @include for-tablet {
+        font-size: 1.3em;
+    }
 }
 
 // Button Animation
@@ -45,7 +55,7 @@ a {
     transform: perspective(1px) translateZ(0);
     //box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: $color-yellow;
+    background: $color-red;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -59,7 +69,7 @@ a {
         bottom: 0;
         left: 0;
         right: 0;
-        background: #ceaa00;
+        background: #b70014;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
         -webkit-transform-origin: 50%;
@@ -91,10 +101,6 @@ a {
     padding-top: 3.75em;
     padding-bottom: 3.75em;
 
-    &.naturalsnow-section {
-        padding-top: 8.125em;
-        padding-bottom: 8.125em;
-    }
 }
 
 // Overlays
@@ -117,7 +123,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 
     &--overlay {
         @include jumbotron-overlay;
@@ -140,12 +146,6 @@ a {
         position: relative;
         top: 3px;
     }
-}
-
-.divider-wave {
-    margin-top: -208px;
-    z-index: 999;
-    position: relative;
 }
 
 // Accordion
@@ -176,15 +176,17 @@ a {
 
 // Tables
 .table {
+    
     td {
-        border-top: 1px solid $color-yellow-light;
+        border-top: 1px solid $color-red-light;
     }
 
     thead, tbody {
         th {
-            background-color: $color-yellow-light;
-            border-top: 1px solid $color-yellow-light;
-            border-bottom: 2px solid $color-yellow-light;
+            background-color: $color-red-light;
+            border-top: 1px solid $color-red-light;
+            border-bottom: 2px solid $color-red-light;
+            color: $color-white;
         }
 
         th.cell-blue {
@@ -203,11 +205,59 @@ a {
         }
 
         td {
-            border-top: 1px solid $color-yellow-light;
+            border-top: 1px solid $color-red-light;
+            color: $color-black;
         }
     
         td.empty {
             border: 0;
         }
+    }
+}
+
+// Slider
+.slick-prev, .slick-next {
+    &:before {
+        color: $color-black !important;
+    }
+}
+
+.slick-prev {
+    @include for-phone-only {
+        left: 0 !important;
+        z-index: 1;
+    }
+}
+
+.slick-next {
+    @include for-phone-only {
+        right: 0 !important;
+        z-index: 1;
+    }
+}
+
+// Card
+.card {
+    border: 0;
+    border-radius: 0;
+    background: $color-white;
+    box-shadow: 2px 4px 12px rgba(35, 35, 35, 0.05);
+}
+
+// Back to top 
+.back-to-top {
+    background-color: $color-red;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    z-index: 99;
+
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+
+    &.btn {
+        color: $color-white;
     }
 }

@@ -1,9 +1,12 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/flag-icon-css/sass/flag-icon';
 
 @import "fonts";
 @import "variables";
+@import "breakpoints";
 @import "elements";
 @import "landingpage";
+
 
 
 html, body {
