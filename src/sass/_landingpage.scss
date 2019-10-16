@@ -196,7 +196,7 @@
         z-index: 1;
     }
 
-    @include jumbotron-background($backgroundImage: '../assets/mountain.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/natural-snow.png');
 
 
     padding-top: 14.125em;
@@ -260,7 +260,7 @@
 
 //Fifth Section - Mountain
 .mountain-section {
-    @include jumbotron-background($backgroundImage: '../assets/mountain.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/the-mountain.png');
 
     h2 {
         color: $color-white;
@@ -334,7 +334,7 @@
 
 // Seventh Section
 .tickets-section {
-    @include jumbotron-background($backgroundImage: '../assets/rentals.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/tickets-and-rentals.jpg');
 
     h2 {
         color: $color-white;
@@ -370,7 +370,7 @@
 
 // Ninth Section
 .schools-section {
-    @include jumbotron-background($backgroundImage: '../assets/school.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/school-activities.png');
 
     h2 {
         color: $color-white;
@@ -398,7 +398,7 @@
 
 // Eleventh Section
 .packages-section {
-    @include jumbotron-background($backgroundImage: '../assets/packages.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/packages.jpg');
 
     h2 {
         color: $color-white;
@@ -430,7 +430,7 @@
 
 // Thirteenth Section
 .snow-park-section {
-    @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/snow-park.jpg');
 
     h2 {
         color: $color-white;
@@ -468,7 +468,7 @@
 
 //Fifteenth
 .facilities-section {
-    @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/facilities.jpg');
 
     h2 {
         color: $color-white;
@@ -522,7 +522,7 @@
 
 //Eighteenth
 .access-section {
-    @include jumbotron-background($backgroundImage: '../assets/snow-park.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/sections/access.png');
 
     h2 {
         color: $color-white;
