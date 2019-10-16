@@ -196,9 +196,8 @@
         z-index: 1;
     }
 
-    @include jumbotron-background($backgroundImage: '../assets/natural-snow.jpg');
+    @include jumbotron-background($backgroundImage: '../assets/mountain.jpg');
 
-   
 
     padding-top: 14.125em;
     padding-bottom: 6.75em;
